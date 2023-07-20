@@ -1,0 +1,3 @@
+안드로이드 스튜디오 단축키 등
+
+widget 삭제 - show context actions - remove the widget
