@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
 
     void connect(){
         mHandler = new Handler(Looper.getMainLooper());
-        Log.w("connect","연결 하는중");
+        Log.w("connect","connecting....");
 
         Thread checkUpdate = new Thread(){
             public void run(){
@@ -83,9 +83,9 @@ public class MainActivity extends AppCompatActivity {
                 // Access server
                 try{
                     socket = new Socket(newip, port);
-                    Log.w("서버 접속됨", "서버 접속됨");
+                    Log.w("Server connect", "success");
                 }catch (IOException e1){
-                    Log.w("서버 접속 못함", "서버 접속 못함");
+                    Log.w("Server connect", "fail");
                     e1.printStackTrace();
                 }
 
